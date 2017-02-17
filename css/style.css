@@ -35,14 +35,18 @@ Version:1.0
     width: 100%;
 }
 
+.social ul li {
+  display: inline;
+  text-align: center;
+}
+
 .contactenos{
     padding-bottom: 70px !important;
     padding-top: 70px !important;
 }
 
 .menu{
-    padding-left: 40px;
-    padding-top: 40px;
+    align-items: center;
 }
 
 .contactenos p:first-child{
@@ -136,7 +140,7 @@ Version:1.0
   .menu{
       padding-left: 0px;
       padding-top: 40px;
-      text-align: center;;
+      text-align: center;
   }
 }
 
