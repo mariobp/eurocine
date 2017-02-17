@@ -39,6 +39,10 @@ main {
     text-align: center;
 }
 
+.social ul li a img{
+
+}
+
 .contactenos {
     padding-bottom: 70px !important;
     padding-top: 70px !important;
@@ -57,6 +61,7 @@ main {
 .cont-menu .menu {
     position: fixed;
     z-index: 2;
+    padding-top: 30px;
 }
 
 .menu ul li a {
@@ -239,6 +244,14 @@ main {
     }
 }
 
+@media (max-width: 1280px) {
+    .cont-menu{
+      width: 300px !important;
+    }
+    .contactenos{
+      width: 300px !important;
+    }
+}
 /*
 Colores
 */
