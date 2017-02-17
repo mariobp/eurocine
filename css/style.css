@@ -20,19 +20,29 @@ Version:1.0
 
 */
 
+ body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
 
-.home-temporal{
-    background-image: url(../img/HomeTemporal_Todas_Pantallas.png);
-    background-repeat: no-repeat;
-    background-attachment: inherit;
-    background-position: center;
-    height: 1024px;
-    background-size: contain;
+  main {
+    flex: 1 0 auto;
+  }
+
+
+.home-temporal img{
+    width: 100%;
 }
 
 .contactenos{
     padding-bottom: 70px !important;
     padding-top: 70px !important;
+}
+
+.menu{
+    padding-left: 40px;
+    padding-top: 40px;
 }
 
 .contactenos p:first-child{
@@ -102,9 +112,6 @@ Version:1.0
 }
 
 @media (max-width: 420px) {
-  .home-temporal {
-    background-position: inherit;
-  }
 
   .press-kit{
     margin-left:0 !important;
@@ -126,8 +133,10 @@ Version:1.0
     display: inherit;
   }
 
-  .home-temporal{
-    height: 430px;
+  .menu{
+      padding-left: 0px;
+      padding-top: 40px;
+      text-align: center;;
   }
 }
 
