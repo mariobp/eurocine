@@ -84,6 +84,10 @@ main {
   height: 175px;
 }
 
+.caja-apoyo{
+  height: 263px; 
+}
+
 .menu1 {
     background-image: url("../img/menu/eurocine_1024.png");
     height: 65px;
@@ -219,6 +223,7 @@ main {
     float: left;
     margin-bottom: 8px;
     padding-left: 3%;
+    height: 22px;
 }
 
 .cont-form {
@@ -234,7 +239,22 @@ main {
 }
 
 .footer-movil {
-    display: none;
+    display: none ;
+}
+
+@media (max-width: 1280px) {
+    .cont-menu{
+      width: 300px !important;
+    }
+    .contactenos{
+      width: 300px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .press-kit {
+        margin-left: 0 !important;
+    }
 }
 
 @media (max-width: 420px) {
@@ -263,22 +283,15 @@ main {
         position: inherit;;
         z-index: inherit;;
     }
-}
-
-@media (max-width: 768px) {
-    .press-kit {
-        margin-left: 0 !important;
-    }
-}
-
-@media (max-width: 1280px) {
-    .cont-menu{
-      width: 300px !important;
-    }
     .contactenos{
-      width: 300px !important;
+      width: 50% !important;
+    }
+
+    .cont-menu{
+      width: 100% !important;
     }
 }
+
 /*
 Colores
 */
