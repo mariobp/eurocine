@@ -300,6 +300,7 @@ main {
     .cont-menu{
       width: 100% !important;
     }
+
 }
 
 /*
@@ -339,4 +340,21 @@ Colores
 
 .color-patrocinador{
   background-color: #272460;
+}
+
+/*
+Peliculas
+*/
+.caratulas{
+  margin-top: 10px;
+}
+
+.caratulas div a {
+  text-decoration: none;
+  color: white; 
+}
+
+.caratulas div a img{
+  width: 100%;
+  height: 224px;
 }
