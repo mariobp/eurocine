@@ -85,7 +85,17 @@ main {
 }
 
 .caja-apoyo{
-  height: 263px; 
+  height: 263px;
+}
+
+.caja-patrocinador{
+  height: 220px;
+}
+
+.caja-p{
+  height: 105px;
+  margin-left: 12px !important;
+  margin-top: 18px;
 }
 
 .menu1 {
@@ -325,4 +335,8 @@ Colores
 
 .color-pauta {
   background-color: #ed433d;
+}
+
+.color-patrocinador{
+  background-color: #272460;
 }
