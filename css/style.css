@@ -72,6 +72,18 @@ main {
     width: 180px;
 }
 
+.caja-contenido{
+  height: 204px;
+}
+
+.caja-pelicula{
+  height: 282px;
+}
+
+.caja-pauta{
+  height: 175px;
+}
+
 .menu1 {
     background-image: url("../img/menu/eurocine_1024.png");
     height: 65px;
@@ -165,6 +177,21 @@ main {
     padding: 15px;
 }
 
+.banner{
+    background-image: url("../img/home/banner_home_1024.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    height: 282px;
+}
+
+.separador{
+  margin-top: 40px;
+}
+
+.titulos{
+  margin: 0px;
+}
 .cont {
     height: 50px;
 }
@@ -260,9 +287,15 @@ Colores
   background-color: #FFA500;
 }
 
-.color-contenidos{
+.color-contenido{
   background-color: #4FB25F;
 }
+
+.verde{
+  color: #4FB25F;
+  font-size: 22px;
+}
+
 
 .color-peliculas{
   background-color: #276CE6;
@@ -270,4 +303,13 @@ Colores
 
 .color-eventos{
   background-color: #606060;
+}
+
+.gris{
+  color: #606060;
+  font-size: 22px;
+}
+
+.color-pauta {
+  background-color: #ed433d;
 }
