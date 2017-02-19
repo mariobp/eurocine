@@ -20,10 +20,17 @@ Version:1.0
 
 */
 
+@import "font.css";
+
 body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    font-family: Elevation;
+}
+
+.descarga{
+  font-family:  MyriadPro-Regular;
 }
 
 main {
@@ -193,12 +200,36 @@ main {
     padding: 15px;
 }
 
-.banner{
-    background-image: url("../img/home/banner_home_1024.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: left;
-    height: 282px;
+.cont-slider{
+  padding: 0px !important;
+}
+
+.slider .slides li img {
+  background-size: contain;
+}
+
+.slider .indicators {
+  text-align: right;
+  bottom: 55px;
+  z-index: 10;
+}
+
+.slider .indicators .indicator-item {
+  background-color: #FFA500;
+}
+
+.slider .indicators .indicator-item.active {
+  background-color: #ff8200;
+}
+
+.caption2 {
+    top: 80% !important;
+    left: 4% !important;
+}
+
+.leer-mas{
+    border: 3px solid #FFA500;
+    padding: 0px 25px;
 }
 
 .separador{
@@ -206,8 +237,10 @@ main {
 }
 
 .titulos{
-  margin: 0px;
+  margin-left: -10px;
+  font-size: 42px;
 }
+
 .cont {
     height: 50px;
 }
@@ -303,6 +336,9 @@ main {
 
     .cont-menu{
       width: 100% !important;
+    }
+    .titulos{
+      font-size: 25px;
     }
 
 }
