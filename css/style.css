@@ -81,7 +81,7 @@ main {
 .all-fixed .menu{
   position: relative;
   z-index: inherit;
-  top: -50px;
+  top: -70px;
   padding-top: 0px;
 }
 

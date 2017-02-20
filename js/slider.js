@@ -5,7 +5,7 @@
     $('.social').waypoint(function() {
         $('.cont-menu').addClass('all-fixed');
         $('.espacio').css('display', 'none');
-    }, { offset: '40%' });
+    }, { offset: '50%' });
 
     $('.social').waypoint(function() {
       console.log("entro");
