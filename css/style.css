@@ -81,13 +81,13 @@ main {
 .all-fixed .menu{
   position: relative;
   z-index: inherit;
-  top: -70px;
+  top: -95px;
   padding-top: 0px;
 }
 
 .all-fixed .social{
   position: relative;
-  top: 305px;
+  top: 280px;
 }
 
 .menu ul li a {
@@ -183,7 +183,7 @@ main {
 
 .titulos{
   margin-left: -10px;
-  font-size: 42px;
+  font-size: 33px;
 }
 
 .cont {
