@@ -73,6 +73,23 @@ main {
     padding-top: 30px;
 }
 
+.all-fixed{
+  align-items: center;
+  flex-direction: column-reverse;
+}
+
+.all-fixed .menu{
+  position: relative;
+  z-index: inherit;
+  top: -50px;
+  padding-top: 0px;
+}
+
+.all-fixed .social{
+  position: relative;
+  top: 305px;
+}
+
 .menu ul li a {
     display: block;
     background-repeat: no-repeat;
@@ -105,78 +122,6 @@ main {
   height: 105px;
   margin-left: 12px !important;
   margin-top: 18px;
-}
-
-.menu1 {
-    background-image: url("../img/menu/eurocine_1024.png");
-    height: 65px;
-}
-
-.menu2 {
-    background-image: url("../img/menu/festival_1024.png");
-    height: 48px;
-}
-
-.menu3 {
-    background-image: url("../img/menu/nuestrosamigos2_1024.png");
-    height: 30px;
-}
-
-.menu4 {
-    background-image: url("../img/menu/Eurofilmpedia_1024.png");
-    height: 108px;
-}
-
-.menu1:hover {
-    background-image: url("../img/menu/Eurocine2_1024.png");
-}
-
-.menu2:hover {
-    background-image: url("../img/menu/fesitval2_1024.png");
-}
-
-.menu3:hover {
-    background-image: url("../img/menu/nuestrosamigos_1024.png");
-}
-
-.menu4:hover{
-    background-image: url("../img/menu/Eurofilmpedia2_1024.png");
-}
-
-.menu-home-1 {
-    background-image: url("../img/menu/Eurocine1_1024.png");
-    height: 65px;
-}
-
-.menu-home-2 {
-    background-image: url("../img/menu/nuestrosamigos1_1024.png");
-    height: 48px;
-}
-
-.menu-home-3 {
-    background-image: url("../img/menu/Festival1_1024.png");
-    height: 48px;
-}
-
-.menu-home-4 {
-    background-image: url("../img/menu/Eurofilmpedia1_1024.png");
-    height: 108px;
-}
-
-.menu-home-1:hover {
-    background-image: url("../img/menu/eurocine_1024.png");
-}
-
-.menu-home-2:hover {
-    background-image: url("../img/menu/nuestrosamigos2_1024.png");
-}
-
-.menu-home-3:hover {
-    background-image: url("../img/menu/festival_1024.png");
-}
-
-.menu-home-4:hover {
-  background-image: url("../img/menu/Eurofilmpedia_1024.png");
 }
 
 .contactenos p:first-child {
@@ -324,7 +269,7 @@ main {
         padding-top: 40px;
         text-align: center;
     }
-    .cont-menu .menu {
+    .cont-menu .menu, .all-fixed {
         position: inherit;;
         z-index: inherit;;
     }
@@ -341,6 +286,9 @@ main {
       font-size: 25px;
     }
 
+    .mail{
+      font-size: 11px;
+    }
 }
 
 /*
