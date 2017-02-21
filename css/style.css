@@ -114,14 +114,21 @@ main {
   height: 263px;
 }
 
+.caja-apoyo .row{
+  display: flex;
+  justify-content: space-around;
+}
+
 .caja-patrocinador{
   height: 220px;
 }
 
 .caja-p{
   height: 105px;
-  margin-left: 12px !important;
-  margin-top: 18px;
+  margin-left: 10px !important;
+  margin-right: 10px;
+  margin-top: 14px;
+  margin-bottom: 10px;
 }
 
 .contactenos p:first-child {
@@ -147,6 +154,46 @@ main {
 
 .cont-slider{
   padding: 0px !important;
+}
+
+.cont-slider-patrocinador {
+  border-left: 10px #FFA500 solid;
+  border-bottom: 25px #FFA500 solid;
+  height: 256px;
+
+}
+
+.cont-slider-patrocinador .slider .indicators{
+  bottom: -25px;
+  right: 10px;
+}
+
+.cont-slider-equipo .slider .indicators{
+  bottom: -25px;
+  right: 5px;
+}
+
+.col-patrocinador{
+  padding-left: 0px !important;
+}
+
+.col-patrocinador .titulos{
+  margin-left: 1px;
+}
+
+.col-equipo{
+  padding-right: 0px !important;
+}
+
+.col-equipo .titulos{
+  margin-left: 1px;
+}
+
+.cont-slider-equipo {
+  border-right: 10px #FFA500 solid;
+  border-bottom: 25px #FFA500 solid;
+  height: 256px;
+
 }
 
 .slider .slides li img {
