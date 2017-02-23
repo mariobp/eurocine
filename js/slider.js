@@ -12,4 +12,9 @@
         $('.cont-menu').removeClass('all-fixed');
         $('.espacio').css('display', 'inherit');
     }, { offset: '60%' });
+    $('.modal').modal();
+    $('.caja-p').click(function(event) {
+      /* Act on the event */
+      $('#modal1').modal('open');
+    });
   });
