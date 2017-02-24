@@ -37,6 +37,10 @@ main {
     flex: 1 0 auto;
 }
 
+.full-height{
+  height: 100%;
+}
+
 .home-temporal img {
     width: 100%;
 }
@@ -233,6 +237,12 @@ main {
   font-size: 33px;
 }
 
+.titulo-media{
+  font-weight: bold;
+  color: #606060;
+  font-family: MyriadPro-Regular;
+}
+
 .cont {
     height: 50px;
 }
@@ -336,6 +346,10 @@ main {
     .mail{
       font-size: 11px;
     }
+    .all-fixed .social {
+      position: relative;
+      top: 350px;
+    }
 }
 
 /*
@@ -358,6 +372,10 @@ Colores
 
 .color-peliculas{
   background-color: #276CE6;
+}
+
+.azul{
+  color: #276CE6;
 }
 
 .color-eventos{
