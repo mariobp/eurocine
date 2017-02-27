@@ -167,6 +167,14 @@ main {
 
 }
 
+.cont-rigth{
+  border-right: 10px #fff solid;
+}
+
+.cont-left{
+  border-left: 10px #fff solid;
+}
+
 .cont-slider-patrocinador .slider .indicators{
   bottom: -25px;
   right: 10px;
@@ -212,6 +220,7 @@ main {
 
 .slider .indicators .indicator-item {
   background-color: #FFA500;
+  margin: 0 2px;
 }
 
 .slider .indicators .indicator-item.active {
@@ -234,10 +243,18 @@ main {
 
 .titulos{
   margin-left: -10px;
-  font-size: 33px;
+  font-size: 40px;
+  font-family: MyriadPro-Regular;
+  margin-top: -7px;
+
+}
+
+.cont-titulos{
+  height: 38px;
 }
 
 .titulo-media{
+  font-size: 20px;
   font-weight: bold;
   color: #606060;
   font-family: MyriadPro-Regular;
@@ -339,16 +356,17 @@ main {
     .cont-menu{
       width: 100% !important;
     }
-    .titulos{
-      font-size: 25px;
-    }
 
     .mail{
-      font-size: 11px;
+      font-size: 9px;
     }
     .all-fixed .social {
       position: relative;
       top: 350px;
+    }
+    .cont-rigth, .cont-left{
+      border-left: inherit;
+      border-right: inherit;
     }
 }
 
