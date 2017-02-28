@@ -118,19 +118,14 @@ main {
   height: 263px;
 }
 
-.caja-apoyo .row{
-  display: flex;
-  justify-content: space-around;
-}
-
 .caja-patrocinador{
   height: 220px;
 }
 
 .caja-p{
   height: 100px;
-  margin-left: 10px !important;
-  margin-right: 10px;
+  margin-left: 2% !important;
+  margin-right: 1%;
   margin-top: 18px;
   margin-bottom: 10px
 }
@@ -357,12 +352,38 @@ main {
       width: 100% !important;
     }
 
+    .caja-apoyo {
+        height: 100%;
+    }
+
+    .caja-p{
+      height: 100px;
+      border-left: 6px #FFA500 solid;
+      border-right: 6px  #FFA500 solid;
+      margin-top: 10px;
+      margin-left: 0px !important;
+      margin-right: 0px;
+    }
+
     .mail{
       font-size: 9px;
     }
+
+    .all-fixed{
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .all-fixed .menu{
+      position: inherit;
+      z-index: inherit;
+      top: auto;;
+      padding-top: 0px;
+    }
+
     .all-fixed .social {
-      position: relative;
-      top: 350px;
+      position: inherit;
+      top: auto;
     }
     .cont-rigth, .cont-left{
       border-left: inherit;
