@@ -17,4 +17,13 @@
       /* Act on the event */
       $('#modal1').modal('open');
     });
+
+    $('.activar-hover').hover(function() {
+      /* Stuff to do when the mouse enters the element */
+      $(".footer-hover").addClass('active');
+    }, function() {
+      /* Stuff to do when the mouse leaves the element */
+      $(".footer-hover").removeClass('active');
+      console.log("remove");
+    });
   });
