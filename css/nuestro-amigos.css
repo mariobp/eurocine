@@ -2,6 +2,24 @@
   background-color: #FFA500;
 }
 
+.cont-span{
+  display: inline-block;
+  height: 38px;
+  line-height: 45px;
+}
+
+.margin-b20{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.caja-apoyo .caja-p{
+  background-image: url("../img/home/CARATULA_home_320.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .opcion1 {
     background-image: url("../img/menu/eurocine_1024.png");
     height: 65px;
