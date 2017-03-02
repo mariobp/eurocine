@@ -33,6 +33,11 @@ body {
   font-family:  MyriadPro-Regular;
 }
 
+.descarga p{
+    position: relative;
+    top: -5px;
+}
+
 main {
     flex: 1 0 auto;
 }
@@ -143,6 +148,12 @@ main {
 
 .press-kit p {
     font-weight: bold;
+}
+
+.icono-descargar{
+  position: relative;
+  top: 5px;
+  left: 5px;
 }
 
 .border {
