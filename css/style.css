@@ -558,3 +558,33 @@ Peliculas
   width: 100%;
   height: 224px;
 }
+
+/*
+Modal
+*/
+
+.modal{
+  border: 20px #FFA500 solid;
+}
+
+.modal-content{
+   margin-top: 20px;
+}
+
+.close{
+    border-radius: 50%;
+    background-color: #FFA500;
+    border: 0px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.close:focus{
+  background-color: #ed433d;
+}
+
+.close i{
+    position: relative;
+    top: 3px;
+}
