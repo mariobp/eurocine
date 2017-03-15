@@ -19,8 +19,8 @@
 
 .fila1, .fila2{
   display: flex;
-  -webkit-justify-content: space-around;
-  justify-content: space-around;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
   margin: 0px;
   margin-left: 0px !important;
   margin-right: 0px !important;
