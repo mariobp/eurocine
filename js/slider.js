@@ -7,10 +7,17 @@ $(".caja-p").each(function(index, el) {
         'height': $(this).width()
     });
 });
+$("#ciudad").val($(".collection-item.active").text());
 
-$(".leer-mas").click(function(event) {
-    /* Act on the event */
-    console.log("click");
+$(".collection-item").click(function(event) {
+  /* Act on the event */
+  $(".collection-item").each(function(index, el) {
+      if ($(el).hasClass('active')) {
+        $(el).removeClass('active');
+      }
+  });
+  $(this).addClass('active');
+  $("#ciudad").val($(this).text());
 });
 
 var cont_patrocinador = $(".cont-slider-patrocinador");
@@ -37,6 +44,8 @@ $(".filtros a").css({
   width: max,
 });
 */
+
+
 menu();
 hoverFooter();
 
@@ -113,25 +122,34 @@ var getMonthMatrix = function(contex, year, month) {
     return result;
 };
 
+function numero(num){
+  if (num < 10) {
+    return "0" + num;
+  }
+  return num;
+}
+
 $(document).ready(function() {
     var date = new Date();
     var months = [
-        "January",
-        "February",
-        "March",
-        "April",
-        "May",
-        "June",
-        "July",
-        "August",
-        "September",
-        "October",
-        "November",
-        "December"
+        "Enero",
+        "Febrero",
+        "Marzo",
+        "Abril",
+        "Mayo",
+        "Junio",
+        "Julio",
+        "Agosto",
+        "Septiembre",
+        "Octubre",
+        "Noviembre",
+        "Diciembre"
     ];
     var m = date.getMonth();
     var m2 = m;
-    var d2 = 0;
+    var d2 = date.getDate();
+    var fecha = date.getFullYear()+'/'+numero(m2+1)+'/'+numero(d2); // input con el valor
+    $("#fecha").val(fecha);
     $('.cb_month').text(months[m]);
     getMonthMatrix('.cb_calendar', date.getFullYear(), m);
     $('.cb_prev').click(function() {
@@ -150,7 +168,8 @@ $(document).ready(function() {
         var d2 = $(this).find('.cb_day_num').text();
         document.querySelector('.cb_now').classList.remove('cb_now');
         $(this).get(0).classList.add('cb_now');
-        $('#cb_calendar_value').val(date.getFullYear()+'/'+(m2+1)+'/'+d2); // input con el valor
+        fecha = date.getFullYear()+'/'+numero(m2+1)+'/'+d2; // input con el valor
+        $("#fecha").val(fecha);
     });
 
 });
