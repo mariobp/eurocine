@@ -2,17 +2,22 @@ $('.slider').slider({
     height: 231,
 });
 
-/*
 $(".caja-p").each(function(index, el) {
     $(this).css({
         'height': $(this).width()
     });
 });
-*/
+$("#ciudad").val($(".collection-item.active").text());
 
-$(".leer-mas").click(function(event) {
-    /* Act on the event */
-    console.log("click");
+$(".collection-item").click(function(event) {
+  /* Act on the event */
+  $(".collection-item").each(function(index, el) {
+      if ($(el).hasClass('active')) {
+        $(el).removeClass('active');
+      }
+  });
+  $(this).addClass('active');
+  $("#ciudad").val($(this).text());
 });
 
 var cont_patrocinador = $(".cont-slider-patrocinador");
@@ -39,6 +44,8 @@ $(".filtros a").css({
   width: max,
 });
 */
+
+
 menu();
 hoverFooter();
 
@@ -115,25 +122,34 @@ var getMonthMatrix = function(contex, year, month) {
     return result;
 };
 
+function numero(num){
+  if (num < 10) {
+    return "0" + num;
+  }
+  return num;
+}
+
 $(document).ready(function() {
     var date = new Date();
     var months = [
-        "January",
-        "February",
-        "March",
-        "April",
-        "May",
-        "June",
-        "July",
-        "August",
-        "September",
-        "October",
-        "November",
-        "December"
+        "Enero",
+        "Febrero",
+        "Marzo",
+        "Abril",
+        "Mayo",
+        "Junio",
+        "Julio",
+        "Agosto",
+        "Septiembre",
+        "Octubre",
+        "Noviembre",
+        "Diciembre"
     ];
     var m = date.getMonth();
     var m2 = m;
-    var d2 = 0;
+    var d2 = date.getDate();
+    var fecha = date.getFullYear()+'/'+numero(m2+1)+'/'+numero(d2); // input con el valor
+    $("#fecha").val(fecha);
     $('.cb_month').text(months[m]);
     getMonthMatrix('.cb_calendar', date.getFullYear(), m);
     $('.cb_prev').click(function() {
@@ -152,58 +168,54 @@ $(document).ready(function() {
         var d2 = $(this).find('.cb_day_num').text();
         document.querySelector('.cb_now').classList.remove('cb_now');
         $(this).get(0).classList.add('cb_now');
-        $('#cb_calendar_value').val(date.getFullYear()+'/'+(m2+1)+'/'+d2); // input con el valor
+        fecha = date.getFullYear()+'/'+numero(m2+1)+'/'+d2; // input con el valor
+        $("#fecha").val(fecha);
     });
 
 });
 
 
-jQuery(document).ready(function ($) {
 
-  $('#checkbox').change(function(){
-    setInterval(function () {
-        moveRight();
-    }, 3000);
+$('#checkbox').change(function(){
+  setInterval(function () {
+      moveRight();
+  }, 3000);
+});
+
+$('#slider ul li').width($("#slider").width());
+var slideCount = $('#slider ul li').length;
+var slideWidth = $('#slider ul li').width();
+var slideHeight = $('#slider ul li').height();
+var sliderUlWidth = slideCount * slideWidth;
+
+//$('#slider').css({ width: "100%", height: "100%" });
+
+$('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+
+  $('#slider ul li:last-child').prependTo('#slider ul');
+
+  function moveLeft() {
+      $('#slider ul').animate({
+          left: + slideWidth
+      }, 200, function () {
+          $('#slider ul li:last-child').prependTo('#slider ul');
+          $('#slider ul').css('left', '');
+      });
+  };
+
+  function moveRight() {
+      $('#slider ul').animate({
+          left: - slideWidth
+      }, 200, function () {
+          $('#slider ul li:first-child').appendTo('#slider ul');
+          $('#slider ul').css('left', '');
+      });
+  };
+
+  $('a.control_prev').click(function () {
+      moveLeft();
   });
 
-	var slideCount = $('#slider ul li').length;
-  $('#slider ul li').width($("#slider").width());
-  console.log($("#slider").width());
-  console.log($('#slider ul li').width());
-	var slideWidth = $('#slider ul li').width();
-	var slideHeight = $('#slider ul li').height();
-	var sliderUlWidth = slideCount * slideWidth;
-
-	//$('#slider').css({ width: "100%", height: "100%" });
-
-	$('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
-
-    $('#slider ul li:last-child').prependTo('#slider ul');
-
-    function moveLeft() {
-        $('#slider ul').animate({
-            left: + slideWidth
-        }, 200, function () {
-            $('#slider ul li:last-child').prependTo('#slider ul');
-            $('#slider ul').css('left', '');
-        });
-    };
-
-    function moveRight() {
-        $('#slider ul').animate({
-            left: - slideWidth
-        }, 200, function () {
-            $('#slider ul li:first-child').appendTo('#slider ul');
-            $('#slider ul').css('left', '');
-        });
-    };
-
-    $('a.control_prev').click(function () {
-        moveLeft();
-    });
-
-    $('a.control_next').click(function () {
-        moveRight();
-    });
-
-});
+  $('a.control_next').click(function () {
+      moveRight();
+  });
