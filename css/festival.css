@@ -193,6 +193,8 @@
 
 .cb_calendar_contain{
     padding: 0 70px;
+    background-image: url("../img/fondocalendario.png");
+    padding-top: 50px;
 }
 
 
