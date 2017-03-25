@@ -2,11 +2,6 @@ $('.slider').slider({
     height: 231,
 });
 
-$(".caja-p").each(function(index, el) {
-    $(this).css({
-        'height': $(this).width()
-    });
-});
 $("#ciudad").val($(".collection-item.active").text());
 
 $(".collection-item").click(function(event) {
