@@ -185,7 +185,6 @@ var slideWidth = $('#slider ul li').width();
 var slideHeight = $('#slider ul li').height();
 var sliderUlWidth = slideCount * slideWidth;
 
-console.log(slideWidth)
 $('#slider').css({ width: "100%", height: "100%" });
 
 $('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
