@@ -63,14 +63,14 @@ function menu() {
         $('.cont-menu').addClass('all-fixed');
         $('.espacio').css('display', 'none');
     }, {
-        offset: '20%'
+        offset: '50%'
     });
 
     $('.social').waypoint(function() {
         $('.cont-menu').removeClass('all-fixed');
         $('.espacio').css('display', 'inherit');
     }, {
-        offset: '50%'
+        offset: '100%'
     });
     $('.modal').modal();
 }
