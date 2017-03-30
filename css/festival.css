@@ -302,6 +302,10 @@ a.control_prev:hover, a.control_next:hover {
 }
 
 
+.td-pelicula{
+  text-decoration: underline;
+}
+
 @media (max-width: 1336px) {
     .peliculas  .caja-peli a img{
         width: 120px;
