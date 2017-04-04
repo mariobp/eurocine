@@ -3,6 +3,14 @@ $('.slider').slider({
     interval: 10000
 });
 
+$(".descarga").click(function(event) {
+  /* Act on the event */
+  var descarga = document.querySelector('.descarga-aqui a');
+  if (descarga) {
+    descarga.click();
+  }
+});
+
 $("#ciudad").val($(".collection-item.active").text());
 
 $(".collection-item").click(function(event) {
