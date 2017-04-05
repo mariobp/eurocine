@@ -250,8 +250,7 @@ main {
 }
 
 .slider .slides li img {
-  background-size: contain;
-
+  background-size: cover;
 }
 
 .cont-slider .slider .indicators {
@@ -569,10 +568,6 @@ Medias
 
   .cont-slider .slider .indicators {
     left: 140px;
-  }
-
-  .slider .slides li img {
-    background-size: cover;
   }
 
   .caratulas div a img {

@@ -171,7 +171,10 @@ $(document).ready(function() {
     });
     $('.click_b').click(function() {
         var d2 = $(this).find('.cb_day_num').text();
-        document.querySelector('.cb_now').classList.remove('cb_now');
+        var cb = document.querySelector('.cb_now');
+        if (cb) {
+          cb.classList.remove('cb_now');
+        }
         $(this).get(0).classList.add('cb_now');
         fecha = date.getFullYear()+'/'+numero(m2+1)+'/'+d2; // input con el valor
         $("#fecha").val(fecha);
